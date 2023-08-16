@@ -1,0 +1,40 @@
+<p-toast></p-toast>
+<div class="registration-container">
+    <h2>Registration Form</h2>
+    <form [formGroup]="registration" (ngSubmit)="onSubmit()">
+      <div class="p-field">
+        <label for="name">Name</label>        
+<input type="text" pInputText formControlName="name" placeholder="Enter your name"/>
+<div *ngIf="registration.get('name')?.hasError('required') && registration.get('name')?.touched" class="error-message">
+  Name is required
+</div>
+      </div>
+      <div class="p-field">
+        <label for="email">Email</label>
+        <input id="email" pInputText formControlName="email" placeholder="Enter your email" />
+        <div *ngIf="registration.get('email')?.hasError('required') && registration.get('email')?.touched" class="error-message" style="color: crimson;">
+          Email is required
+        </div>
+      </div>
+      <div class="p-field">
+        <label for="password">Password</label>
+        <input id="password" pPassword formControlName="password" placeholder="Enter your password" />
+        <div *ngIf="registration.get('password')?.hasError('required') && registration.get('password')?.touched" class="error-message" style="color: crimson;">
+          password is required
+        </div>
+      </div>
+      <div class="p-field">
+        <label for="confirmPassword">Confirm Password</label>
+        <input id="confirmPassword" pPassword formControlName="confirmPassword" placeholder="Confirm your password" />
+        <div *ngIf="registration.get('confirmPassword')?.hasError('required') && registration.get('confirmPassword')?.touched" class="error-message" style="color: crimson;">
+          confirmPassword is required
+        </div>
+      </div>
+      <div *ngIf="registration.hasError('passwordMismatch') && registration.get('confirmPassword')?.touched" class="error-message">
+        Passwords do not match
+      </div>
+      <button type="submit" pButton label="Submit"></button>
+    </form>
+    <p>Already have an account? <a routerLink="/login">Sign in here</a></p>
+  </div>
+  

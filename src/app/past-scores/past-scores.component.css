@@ -1,0 +1,25 @@
+table , tr , td , th
+{
+   border: 1px solid black;
+   height:50%;
+   width:40%;
+   margin: 20px;
+   position: relative;
+   margin-left: 30%;
+}
+ 
+th{
+    background-color: #b6aeae;
+    font-weight: bold;
+  }
+  
+tr {
+    background-color: #ffffff;
+  }
+
+h1{
+    text-align: center;
+}
+  
+  /* Add more styles as needed */
+  

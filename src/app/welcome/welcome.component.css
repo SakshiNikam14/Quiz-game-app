@@ -1,0 +1,12 @@
+img {
+    display: block;
+    margin: 0 auto;
+    max-width:80%;
+    height: 50%;
+}
+
+h1
+{
+    text-align: center;
+    color:rgb(219, 61, 114)
+}

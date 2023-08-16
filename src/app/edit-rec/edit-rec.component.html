@@ -1,0 +1,21 @@
+<p>edit-rec works!</p>
+<form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="p-field">
+      <label for="question">Question</label>
+      <input id="question" pInputText formControlName="question_text" />
+    </div> 
+    <div class="p-field">
+      <label for="option1">option1</label>
+      <input id="option1" pInputText formControlName="options.options1" />
+    </div> 
+    
+    <div class="p-field">
+      <label for="correctOption">Correct Option</label>
+      <input id="correctOption" pInputText formControlName="correct_option" />
+    </div>
+    <div class="p-field">
+      <label for="difficultyLevel">Difficulty Level</label>
+  <p-dropdown [options]="difficultyLevels" formControlName="difficulty_level"></p-dropdown>
+    </div> 
+      <p-button type="submit" label="Submit"></p-button>
+</form>

@@ -1,0 +1,45 @@
+.container-1{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-2{
+    margin-top: 20%;
+    text-align: center;
+    border: 5px rgb(50, 3, 54) solid;
+    width:70%;
+    margin-left: 15%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.custom-dropdown {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+   
+    /* Add more styles as needed */
+  }
+  
+  /* Custom styling for the button */
+  .custom-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    margin-left: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* Add more styles as needed */
+  }
+  image{
+    width:50%;
+    height:50%;
+  }
+p ,h1
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#score_value
+{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+  

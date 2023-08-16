@@ -1,0 +1,78 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2b3e94;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(236, 221, 234);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #242422;
+  }
+
+  footer{
+    padding:10px;
+    background-color: skyblue;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+  }
+/* AddQuestionsComponent.css */
+/* Apply styles to the heading */
+h1 {
+    font-size: 24px;
+    color: #333; /* Change the color to your preference */
+    margin-bottom: 20px;
+  }
+  
+  /* Apply styles to the labels */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Apply styles to the input fields */
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Apply styles to the dropdown */
+  .p-dropdown {
+    width: 100%;
+  }
+  
+  /* Apply styles to the submit button */
+  button[type="submit"] {
+    background-color: #007bff; /* Change the color to your preference */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Apply hover effect to the submit button */
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Change the color to your preference */
+  }
+  
+  

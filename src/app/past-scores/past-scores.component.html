@@ -1,0 +1,14 @@
+<h1>Past ScoreBoard</h1>
+<table>
+    <tr>
+        <th>Sr.No.</th>
+        <th>Score</th>
+        <th>Date</th>
+    </tr>
+    <tr>
+        <tr *ngFor="let item of array">
+            <td>{{item.id}}</td>
+            <td>{{item.score}}</td>
+            <td>{{item.test_date | date:'mediumDate'}}</td>
+    </tr>
+</table>

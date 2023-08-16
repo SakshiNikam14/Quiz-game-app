@@ -1,0 +1,24 @@
+<div class="container-1">
+    <h2>Take a Quiz</h2>
+    <p-dropdown [options]="difficultyLevels" [(ngModel)]="selectedDifficulty"></p-dropdown>
+
+    <button pButton label="Start Quiz" (click)="startQuiz()"></button>
+  </div>
+  <div *ngIf="questions.length > 0" class="container-2">
+    <div>
+      <h1>Test Started</h1>
+      <p>{{ currentQuestionIndex + 1 }}. {{ questions[currentQuestionIndex].question_text }}</p>
+      <div *ngFor="let option of questions[currentQuestionIndex].options; let i = index">
+        <input type="radio" [name]="'option' + currentQuestionIndex" [id]="'option' + currentQuestionIndex + '-' + i"
+          [(ngModel)]="selectedOption" [value]="i">
+        <label [for]="'option' + currentQuestionIndex + '-' + i">{{ option }}</label>
+      </div>
+      <button pButton label="Save" (click)="saveAnswer()"></button>
+      <button pButton label="Next" (click)="nextQuestion()"></button>
+    </div>
+    <div *ngIf="currentQuestionIndex === questions.length - 1">
+      <p id="score_value">Your score: {{ correctAnswers }} / {{ questions.length }}</p>
+      <img src="assets/testcompleted.png" alt="testcompleted">
+    </div>
+  </div>
+  

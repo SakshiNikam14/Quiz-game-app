@@ -1,0 +1,23 @@
+.card1
+{
+    width:45%;
+    height:200px;
+    float:left;
+}
+.card2 {
+    width: 45%;
+    height: 200px;
+    float: right;
+  }
+
+.chart-label {
+    text-align: center;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+.container-1
+{
+    text-align: center;
+}

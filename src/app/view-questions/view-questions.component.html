@@ -1,0 +1,18 @@
+<p-confirmDialog header="Confirmation" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+<p-menubar [model]="menuItems"></p-menubar>
+<table>
+    <tr>
+        <td>sr.no</td>
+        <td>question</td>
+        <td>difficulty</td>
+        <td>Operations</td>
+    </tr>
+    <tr *ngFor="let item of array">
+        <td>{{item.id}}</td>
+        <td>{{item.question_text}}</td>
+        <td>{{item.difficulty_level}}</td>
+        <td><a routerLink="/edit-question/:id"><p-button label="Edit" styleClass="p-button-help"></p-button></a>
+            <p-button (click)="showDeleteConfirmation(item)" label="Delete" styleClass="p-button-danger"></p-button></td>
+        
+    </tr>
+</table>

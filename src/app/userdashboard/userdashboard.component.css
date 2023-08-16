@@ -1,0 +1,36 @@
+/* Styling for the navigation bar container */
+.ui-menubar {
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+  }
+  
+  /* Styling for the menu list */
+  .ui-menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Styling for each menu item */
+  .ui-menu-list li {
+    margin: 0;
+    padding: 10px 20px;
+  }
+  
+  /* Styling for menu item links */
+  .ui-menu-list li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Change link color on hover */
+  .ui-menu-list li a:hover {
+    color: lightgray;
+  }
+  
+  h1
+  {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
